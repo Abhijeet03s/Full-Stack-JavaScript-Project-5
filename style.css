@@ -2,64 +2,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/*--Navbar Section--*/
-
-.navbar {
   font-family: "Poppins";
-  background-color: black;
   color: white;
+}
+body {
+  background-image: url("assets/bg.png");
+  background-size: cover;
+  overflow-y: hidden;
+}
+button {
+  cursor: pointer;
+}
+.navbar {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  background-color: #000000;
+  padding: 15px 60px;
 }
 .logo {
-  margin: 20px 30px;
+  width: 70%;
 }
 .line {
-  margin: 20px 0;
-  border-right: 1px solid white;
+  padding: 0 40px;
+  border-right: 1px solid #ffffff;
+  height: 50px;
 }
 .grow-list {
-  margin-right: 35%;
+  margin-left: 30px;
 }
 .list {
   display: flex;
-  margin: 20px 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.list-item {
+  list-style-type: none;
+  font-size: 14px;
+  margin: 0 30px;
   cursor: pointer;
 }
-.list li {
-  padding: 20px 20px;
-  font-size: 15px;
-  color: white;
-  list-style: none;
+.list-item:first-child {
+  font-weight: 400;
+  font-size: 14px;
 }
-
-.list :first-child::after {
+.list-item:first-child::after {
   content: ">";
+  margin-left: 10px;
   display: inline-block;
-  padding: 3px;
   transform: rotate(90deg);
-  margin-left: 6px;
 }
 .button-small {
-  margin: 30px 30px;
-  padding: 10px 20px;
-  font-size: 15px;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  font-family: "Montserrat", sans-serif;
   background-color: #ba0ec5;
-  color: white;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
   border: none;
-  border-radius: 10px;
+}
+.menu-icon {
+  display: none;
+  height: 30px;
   cursor: pointer;
 }
 
 /*--Hero Section--*/
 
 .hero {
-  background-image: url(assets/bg.png);
-  background-repeat: no-repeat;
-  background-size: 100vw 100vh;
-  height: 100vh;
+  padding: 10% 25%;
+  text-align: center;
 }
 .hero-heading {
   font-family: "Poppins";
@@ -75,19 +89,76 @@
   font-family: "Montserrat";
   position: absolute;
   top: 65%;
-  left: 30%;
+  left: 25%;
   font-size: 25px;
   width: 50%;
 }
 .button-large {
-  position: absolute;
-  top: 75%;
-  left: 40%;
-  font-size: 25px;
-  width: 20%;
-  height: 8%;
-  border-radius: 10px;
-  border: none;
+  margin-top: 20rem;
+  font-family: "Montserrat", sans-serif;
   background-color: #ba0ec5;
-  color: white;
+  color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+  .hero-heading {
+    font-size: 55px;
+  }
+  .button-large {
+    margin-top: 25rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+  .line {
+    padding: 0 10px;
+  }
+  .hero-heading {
+    font-size: 55px;
+  }
+  .button-large {
+    margin-top: 30rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .list {
+    display: none;
+  }
+  .line {
+    display: none;
+  }
+  .menu-icon {
+    display: inline-block;
+    margin-left: 57%;
+  }
+  .hero-heading {
+    font-size: 40px;
+  }
+  .button-large {
+    margin-top: 22rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .button-small {
+    display: none;
+  }
+  .hero-heading {
+    font-size: 30px;
+  }
+  .hero-description {
+    font-size: 15px;
+  }
+  .button-large {
+    margin-top: 25rem;
+    padding: 5px;
+    border-radius: 10px;
+  }
 }
