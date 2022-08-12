@@ -9,6 +9,7 @@ body {
   background-image: url("assets/bg.png");
   background-size: cover;
   overflow-y: hidden;
+  position: relative;
 }
 button {
   cursor: pointer;
@@ -114,20 +115,6 @@ button {
     margin-top: 25rem;
   }
 }
-@media screen and (max-width: 1024px) {
-  .navbar {
-    padding: 15px 30px;
-  }
-  .line {
-    padding: 0 10px;
-  }
-  .hero-heading {
-    font-size: 55px;
-  }
-  .button-large {
-    margin-top: 30rem;
-  }
-}
 @media screen and (max-width: 768px) {
   .list {
     display: none;
@@ -159,6 +146,6 @@ button {
   .button-large {
     margin-top: 25rem;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
 }
