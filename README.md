@@ -15,9 +15,10 @@
 [Live Link](https://live-project-5-fs-js.netlify.app/)
 
 -   Skills Gained in this project.
-    - Learned how to create dropdown.
-    - Learned to arrange large image as a background 
-    in the DOM.
+    - Learned how to create dropdown element.
+    - Learned to arrange large image as a background in the DOM.
+    - Adding a vertical line element in navbar
+    
 ---
 
 ## Time taken to finish this project(including adding media queries)⏲
