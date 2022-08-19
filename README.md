@@ -11,7 +11,7 @@
 
 # Live Project 5 : Crypto Landing page
 
-## Project 1: (Mobile Responsive)
+## Project 5: (Mobile Responsive)
 [Live Link](https://live-project-5-fs-js.netlify.app/)
 
 -   Skills Gained in this project.
